@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Tanker";
+  src: url("/fonts/Tanker-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("/fonts/impact.ttf") format("truetype");
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #b4b4b4;
+}
+
+.title {
+  flex: 2;
+  font-size: 6rem;
+  color: white;
+  font-family: "Impact";
+  writing-mode: vertical-rl;
+  line-height: 6rem;
+}
+
+.subTitle {
+  font-family: "Tanker";
+  font-size: 3.5rem;
+  margin-left: 5.7rem;
+}
+
+.animatedText {
+  font-family: "Tanker";
+  font-size: 1.4rem;
+  color: hsl(0 0% 100% / 0.2); /* Color for the text before the animation */
+  background-image: linear-gradient(
+    90deg,
+    white,
+    white
+  ); /* background-size only works with gradients, not background-color */
+  background-clip: text;
+  background-size: 0% 100%; /* How much of the text has the color  */
+  background-repeat: no-repeat;
+  animation: text-reveal linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover 0vh;
+  animation-range-end: cover 30vh;
+}
+
+@keyframes text-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.whiteLine {
+  height: 0%;
+  width: 0.125rem;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
+  background-color: white;
+  animation: unfolds 1s ease-out forwards;
+}
+
+@keyframes unfolds {
+  100% {
+    height: 83.3%;
+  }
+}
+
+.backgroundImage {
+  flex: 4;
+  display: flex;
+  position: relative;
+  background-image: url("/imgs/bg-img-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

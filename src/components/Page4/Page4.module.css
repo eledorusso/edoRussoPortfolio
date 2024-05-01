@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Tanker";
+  src: url("/fonts/Tanker-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url("/fonts/impact.ttf") format("truetype");
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #b4b4b4;
+}
+
+.title {
+  flex: 2;
+  font-size: 6rem;
+  color: white;
+  font-family: "Impact";
+  writing-mode: vertical-rl;
+  line-height: 6rem;
+}
+
+.mainText {
+  font-family: "Tanker";
+  font-size: 1.4rem;
+  color: white;
+  transform: translate(0, -0.19rem); /* to align it with the top */
+}
+
+table {
+  border-collapse: collapse;
+  font-family: "Tanker";
+  width: 70%;
+  height: 65%;
+  margin-top: 2.5rem;
+}
+
+th {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+td {
+  font-size: 1.5rem;
+}
+
+tbody tr {
+  height: 100% 1s ease;
+  transition: background-color 0.7s ease;
+}
+
+tbody tr:hover {
+  background-color: #d8db3a;
+}
