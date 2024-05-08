@@ -80,7 +80,7 @@ const Page3 = () => {
   return (
     <div className={styles.mainContainer}>
       {/* THIS DIV MAKES AN EMPTY SPACE ON TOP */}
-      <div className="h-40 w-screen" />
+      <div className="h-40 w-full" />
       {/* Main content */}
       <div className="w-full h-full flex">
         {/* the title to the left */}
@@ -169,9 +169,9 @@ const Page3 = () => {
               titleWhite="HOTEL"
               titleBlack="MARCOS G."
               imgs={[
-                "/imgs/apps/unmatched1.png",
-                "/imgs/apps/unmatched1.png",
-                "/imgs/apps/unmatched1.png",
+                "/imgs/apps/hmg1.png",
+                "/imgs/apps/hmg2.png",
+                "/imgs/apps/hmg3.png",
               ]}
             />
             <DisplayApp

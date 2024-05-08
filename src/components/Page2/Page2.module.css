@@ -9,7 +9,7 @@
 }
 
 .mainContainer {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,6 @@
 }
 
 .title {
-  flex: 2;
   font-size: 6rem;
   color: white;
   font-family: "Impact";
@@ -25,10 +24,32 @@
   line-height: 6rem;
 }
 
+@media (max-width: 1201px) {
+  .title {
+    font-size: 4.5rem;
+    writing-mode: horizontal-tb;
+    margin-left: 3rem;
+  }
+}
+
 .subTitle {
   font-family: "Tanker";
   font-size: 3.5rem;
   margin-left: 5.7rem;
+  z-index: 30;
+}
+
+@media (max-width: 1318px) {
+  .subTitle {
+    margin-left: 0;
+    
+  }
+}
+
+@media (max-width: 1201px) {
+  .subTitle {
+    margin-top: 2rem;
+  }
 }
 
 .animatedText {
@@ -46,7 +67,14 @@
   animation: text-reveal linear forwards;
   animation-timeline: view();
   animation-range-start: cover 0vh;
-  animation-range-end: cover 30vh;
+  animation-range-end: cover 22vh;
+  z-index: 30;
+}
+
+@media (max-width: 671px){
+  .animatedText {
+    font-size: 1.8rem;
+  }
 }
 
 @keyframes text-reveal {

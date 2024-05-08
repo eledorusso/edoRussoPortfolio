@@ -7,7 +7,7 @@ const Page4 = () => {
   return (
     <div className={styles.mainContainer}>
       {/* THIS DIV MAKES AN EMPTY SPACE ON TOP */}
-      <div className="h-40 w-screen" />
+      <div className="h-40 w-full" />
 
       {/* THE MAIN CONTENT */}
       <div className="w-full h-full flex">
@@ -34,10 +34,9 @@ const Page4 = () => {
           <div className="flex relative">
             {/* Main Text */}
             <p className={styles.mainText}>
-              Looking for a Job I realized that Websites
-              <br /> are more in demand than React Native so
-              <br /> I transitioned to Web technologies such as
-              <br /> React, Javascript, CSS and HTML.
+              For Websites I know mainly React and
+              <br /> Wordpress. I always try to focus on
+              <br /> responsiveness, clean cand reusable code.
             </p>
             {/* Yellow line, the white line is an ::after for yellowLine */}
             <div
