@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["poppins"],
+        Tanker: ["Tanker"],
+        Impact: ["Impact"],
       },
     },
   },

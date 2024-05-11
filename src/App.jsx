@@ -30,7 +30,7 @@ function App() {
         setScrollArrow("up");
       }
       if (
-        scrollArrow === "up" &&
+        scrollArrow !== 'down'  &&
         Math.ceil(window.scrollY) < window.innerHeight * 2
       ) {
         setScrollArrow("down");

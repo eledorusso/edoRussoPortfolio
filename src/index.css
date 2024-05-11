@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Tanker';
+        src: url('/fonts/Tanker-Regular.ttf') format(truetype);
+    }
+    @font-face {
+        font-family: 'Impact';
+        src: url('/fonts/impact.ttf') format(truetype);
+    }
+}

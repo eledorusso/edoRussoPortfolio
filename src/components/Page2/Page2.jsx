@@ -164,7 +164,7 @@ const Page2 = () => {
         {/* THE MAIN CONTENT */}
         <div className="w-full h-full flex">
           {/* IMAGE AND YELLOW RECTANGLE */}
-          <img src="/imgs/bg-img-2.jpg" className="absolute z-10" />
+          <img src="/imgs/bg-img-2.jpg" className="absolute z-10 h-5/6" />
           <div
             className="absolute w-1/2 h-3/4 left-80 opacity-75 z-20"
             style={{ backgroundColor: "#D8DB3A" }}
@@ -216,7 +216,7 @@ const Page2 = () => {
         {/* THE MAIN CONTENT */}
         <div className="w-full h-full flex">
           {/* IMAGE AND YELLOW RECTANGLE */}
-          <img src="/imgs/bg-img-2.jpg" className="absolute z-10" />
+          <img src="/imgs/bg-img-2.jpg" className="absolute z-10 h-5/6" />
           <div
             className="absolute w-3/4 h-3/4 left-1/2 transform -translate-x-1/2 opacity-75 z-20"
             style={{ backgroundColor: "#D8DB3A" }}
@@ -266,7 +266,7 @@ const Page2 = () => {
         {/* THE MAIN CONTENT */}
         <div className="w-full h-full flex">
           {/* IMAGE AND YELLOW RECTANGLE */}
-          <img src="/imgs/bg-img-2.jpg" className="absolute z-10" />
+          <img src="/imgs/bg-img-2.jpg" className="absolute z-10 h-5/6" />
           <div
             className="absolute w-3/4 h-3/4 left-1/2 transform -translate-x-1/2 opacity-75 z-20"
             style={{ backgroundColor: "#D8DB3A" }}

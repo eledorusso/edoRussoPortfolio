@@ -25,6 +25,15 @@
   line-height: 6rem;
 }
 
+@media (max-width: 970px) {
+  .title {
+    font-size: 4rem;
+    writing-mode: horizontal-tb;
+    margin-left: 2.7rem;
+
+  }
+}
+
 .mainText {
   font-family: "Tanker";
   font-size: 1.4rem;
@@ -32,28 +41,9 @@
   transform: translate(0, -0.19rem); /* to align it with the top */
 }
 
-table {
-  border-collapse: collapse;
+.headerText {
   font-family: "Tanker";
-  width: 70%;
-  height: 65%;
-  margin-top: 2.5rem;
-}
-
-th {
-  font-size: 3rem;
   font-weight: 400;
-}
-
-td {
-  font-size: 1.5rem;
-}
-
-tbody tr {
-  height: 100% 1s ease;
-  transition: background-color 0.7s ease;
-}
-
-tbody tr:hover {
-  background-color: #d8db3a;
+  font-size: 3rem;
+  border-bottom: white solid 0.15rem;
 }
