@@ -5,7 +5,7 @@ const Page3 = () => {
   const [hovering, setHovering] = useState(""); // For the logic of hovering the displayApp cards
   const [imgIdx, setImgIdx] = useState(0); // To know if user is selecting the image 1,2 or 3
   const [width, setWidth] = useState(window.innerWidth);
-  const [cardSelected, setCardSelected] = useState(2);
+  const [cardSelected, setCardSelected] = useState(1);
 
   // LISTENER FOR WIDTH CHANGES
   useEffect(() => {
@@ -537,60 +537,199 @@ const Page3 = () => {
           </p>
         ) : (
           <p className={styles.mainText}>
-            I started coding because I wanted to make Mobile Apps so the first
-            framework I learned to use was React Native.
+            I started coding to make Mobile Apps so the first framework I
+            learned to use was React Native.
           </p>
         )}
-        <div className="flex w-11/12 h-4/6 mx-auto my-auto justify-around">
+        <div className="flex w-11/12 h-4/6 mx-auto my-auto justify-around ">
           {cardSelected === 1 ? (
-            <DisplayApp
-              titleWhite="UNMATCHED"
-              imgs={[
-                "/imgs/apps/unmatched1.png",
-                "/imgs/apps/unmatched2.png",
-                "/imgs/apps/unmatched3.png",
-              ]}
-            />
+            <div className="flex w-full h-full justify-center items-center">
+              <DisplayApp
+                titleWhite="UNMATCHED"
+                imgs={[
+                  "/imgs/apps/unmatched1.png",
+                  "/imgs/apps/unmatched2.png",
+                  "/imgs/apps/unmatched3.png",
+                ]}
+              />
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-right.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(2);
+                }}
+              />
+            </div>
           ) : cardSelected === 2 ? (
-            <DisplayApp
-              titleWhite="PERRO"
-              titleBlack="GRINGO"
-              imgs={[
-                "/imgs/apps/perrogringo1.png",
-                "/imgs/apps/perrogringo2.png",
-                "/imgs/apps/perrogringo3.png",
-              ]}
-            />
+            <div className="flex w-full h-full justify-center items-center">
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-right.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(3);
+                }}
+              />
+              <DisplayApp
+                titleWhite="PERRO"
+                titleBlack="GRINGO"
+                imgs={[
+                  "/imgs/apps/perrogringo1.png",
+                  "/imgs/apps/perrogringo2.png",
+                  "/imgs/apps/perrogringo3.png",
+                ]}
+              />
+
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-left.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(-8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(1);
+                }}
+              />
+            </div>
           ) : cardSelected === 3 ? (
-            <DisplayApp
-              titleWhite="HOTEL"
-              titleBlack="MARCOS G."
-              imgs={[
-                "/imgs/apps/hmg1.png",
-                "/imgs/apps/hmg2.png",
-                "/imgs/apps/hmg3.png",
-              ]}
-            />
+            <div className="flex w-full h-full justify-center items-center">
+              <DisplayApp
+                titleWhite="HOTEL"
+                titleBlack="MARCOS G."
+                imgs={[
+                  "/imgs/apps/hmg1.png",
+                  "/imgs/apps/hmg2.png",
+                  "/imgs/apps/hmg3.png",
+                ]}
+              />
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-right.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(4);
+                }}
+              />
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-left.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(-8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(2);
+                }}
+              />
+            </div>
           ) : cardSelected === 4 ? (
-            <DisplayApp
-              titleWhite="ROBIN"
-              titleBlack="MONEY"
-              imgs={[
-                "/imgs/apps/rbm1.jpg",
-                "/imgs/apps/rbm2.jpg",
-                "/imgs/apps/rbm3.jpg",
-              ]}
-            />
+            <div className="flex w-full h-full justify-center items-center">
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-right.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(5);
+                }}
+              />
+              <DisplayApp
+                titleWhite="ROBIN"
+                titleBlack="MONEY"
+                imgs={[
+                  "/imgs/apps/rbm1.jpg",
+                  "/imgs/apps/rbm2.jpg",
+                  "/imgs/apps/rbm3.jpg",
+                ]}
+              />
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-left.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(-8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(3);
+                }}
+              />
+            </div>
           ) : cardSelected === 5 ? (
-            <DisplayApp
-              titleWhite="OTHER"
-              titleBlack="PROJECTS"
-              imgs={[
-                "/imgs/apps/thegym.png",
-                "/imgs/apps/dicci1.jpg",
-                "/imgs/apps/dicci2.jpg",
-              ]}
-            />
+            <div className="flex w-full h-full justify-center items-center">
+              <DisplayApp
+                titleWhite="OTHER"
+                titleBlack="PROJECTS"
+                imgs={[
+                  "/imgs/apps/thegym.png",
+                  "/imgs/apps/dicci1.jpg",
+                  "/imgs/apps/dicci2.jpg",
+                ]}
+              />
+              <button
+                style={{
+                  position: "absolute",
+                  backgroundImage: `url('/imgs/arrow-left.png')`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "3rem",
+                  height: "3rem",
+                  transform: "translate(-8rem, -1rem)",
+                }}
+                onClick={() => {
+                  setImgIdx(1);
+                  setCardSelected(4);
+                }}
+              />
+            </div>
           ) : null}
         </div>
       </div>
