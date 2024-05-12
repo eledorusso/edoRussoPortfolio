@@ -103,7 +103,7 @@ function App() {
         </div>
 
         <Page2 />
-        {/* <Page3 /> */}
+        <Page3 />
         <Page4 />
       </>
     );

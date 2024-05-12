@@ -25,7 +25,7 @@
   line-height: 6rem;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 971px) {
   .title {
     font-size: 4rem;
     writing-mode: horizontal-tb;

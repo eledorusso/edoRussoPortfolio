@@ -32,6 +32,28 @@
   transform: translate(0, -1.5rem); /* to align it with the top */
 }
 
+@media (max-width: 1373px) {
+  .title {
+    flex: 0;
+    margin-Left: 2rem;
+  }
+
+  .mainText {
+    transform: translate(0, 0);
+    margin-Top: auto;
+    margin-Bottom: auto;
+    margin-Left: 2rem;
+
+  }
+}
+
+@media (max-width: 574px) {
+  .title {
+    font-size: 5rem;
+
+  }
+}
+
 /* TEXT FOR THE DISPLAY APP function */
 
 .titleWhite {
@@ -50,4 +72,10 @@
   writing-mode: vertical-rl;
   margin-left: auto;
   margin-right: 1rem;
+}
+
+@media (max-width: 1373px) {
+  .title {
+    writing-mode: horizontal-tb;
+  }
 }
