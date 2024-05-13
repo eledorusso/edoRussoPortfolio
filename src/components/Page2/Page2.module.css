@@ -22,6 +22,7 @@
   font-family: "Impact";
   writing-mode: vertical-rl;
   line-height: 6rem;
+  flex: 1;
 }
 
 @media (max-width: 1201px) {
