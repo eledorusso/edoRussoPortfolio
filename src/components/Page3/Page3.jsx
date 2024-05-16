@@ -504,8 +504,8 @@ const Page3 = () => {
       <div className={styles.mainContainer}>
         {/* TEXTS */}
         <h2 className={styles.title}>
-          APP
-          <span className="text-black">PROJECTS</span>
+          APPS
+          {/* <span className="text-black">PROJECTS</span> */}
         </h2>
 
         {hovering === "UNMATCHED" ? (
