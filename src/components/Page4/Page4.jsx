@@ -197,8 +197,8 @@ const Page4 = () => {
             name="Vincenza Films"
             year="2022"
           />
-          <div className="w-full bg-white" style={{ height: "0.15rem" }} />
-          <div className="w-full bg-white" style={{ height: "0.15rem" }} />
+          <div className="w-full bg-white" style={{ height: "0.15rem", marginBottom: '1rem' }} />
+          <div className="w-full bg-white" style={{ height: "0.15rem", marginBottom: '1rem' }} />
         </div>
       );
     }
@@ -305,7 +305,7 @@ const Page4 = () => {
         <div className="w-full h-full flex flex-col">
           {/* the title to the left */}
           <h2 className={styles.title}>
-            LINKS
+        
             <span className="text-black">WEBSITES</span>
           </h2>
           {/* CONTAINER FOR THE TEXT, YELLOW LINE AND TABLE */}

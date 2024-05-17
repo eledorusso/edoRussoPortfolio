@@ -24,18 +24,16 @@ function App() {
     };
   }, []);
 
-  //To change the scroll Arrow image
+  //To change the scroll Arrow image, there is some weird behaviour in some screens so I do * 2.9 instead of * 3
   useEffect(() => {
     function handleScroll() {
-      if (Math.ceil(window.scrollY) >= window.innerHeight * 2) {
+      if (window.scrollY > window.innerHeight * 2.9) {
         setScrollArrow("up");
       }
-      if (
-        scrollArrow !== "down" &&
-        Math.ceil(window.scrollY) < window.innerHeight * 2
-      ) {
+      if (window.scrollY < window.innerHeight * 2.9) {
         setScrollArrow("down");
       }
+      console.log(window.scrollY, window.innerHeight);
     }
 
     document.addEventListener("scroll", handleScroll);
@@ -47,7 +45,7 @@ function App() {
 
   //Logic for the Scroll button to scroll 100vh down or to the top.
   const scrollTo = () => {
-    if (Math.ceil(window.scrollY) < window.innerHeight * 2) {
+    if (window.scrollY < window.innerHeight * 2.9) {
       window.scrollTo({
         top: window.scrollY + window.innerHeight,
         behavior: "smooth",
